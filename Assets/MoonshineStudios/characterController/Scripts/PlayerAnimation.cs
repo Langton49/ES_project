@@ -125,8 +125,6 @@ namespace MoonshineStudios.CharacterInputController
             {
                 case 1: // Running forward
                     targetBlendInput = Vector3.up * runMaxBlendValue;
-                    animator.SetBool(isStrafingHash, false);
-                    animator.SetBool(isWalkingBackwardsHash, false);
                     break;
 
                 case 2: // Walking
@@ -161,8 +159,6 @@ namespace MoonshineStudios.CharacterInputController
 
                 default: // Idle
                     targetBlendInput = Vector3.zero;
-                    animator.SetBool(isStrafingHash, false);
-                    animator.SetBool(isWalkingBackwardsHash, false);
                     break;
             }
 
@@ -188,10 +184,6 @@ namespace MoonshineStudios.CharacterInputController
                     break;
                 case 2: // Rotating left
                     animator.SetBool(isRotatingLeftHash, true);
-                    animator.SetBool(isRotatingRightHash, false);
-                    break;
-                default:
-                    animator.SetBool(isRotatingLeftHash, false);
                     animator.SetBool(isRotatingRightHash, false);
                     break;
             }
