@@ -31,23 +31,11 @@ namespace MoonshineStudios.CharacterInputController
             if (currentPlayerLocomotion == null)
                 return;
 
-            HandleMovement();
-            HandleRotation();
+      
             HandleJump();
         }
 
-        private void HandleMovement()
-        {
-            Vector2 movement = currentPlayerLocomotion.MovementInput;
-            // Rest of the movement code...
-        }
-
-        private void HandleRotation()
-        {
-            Vector2 look = currentPlayerLocomotion.LookInput;
-            // Rest of the rotation code...
-        }
-
+       
         private void HandleJump()
         {
             if (currentPlayerLocomotion.jumpPressed)

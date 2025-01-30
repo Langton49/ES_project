@@ -262,9 +262,11 @@ namespace MoonshineStudios.CharacterInputController
 
         public void JumpPlayer()
         {
+            
             if (currentPlayer != null && currentPlayer.isCurrentPlayer)
             {
                 currentPlayer.HandleJumpInput();
+               
             }
         }
 

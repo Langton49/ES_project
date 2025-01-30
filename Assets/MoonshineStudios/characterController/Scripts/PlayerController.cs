@@ -148,8 +148,8 @@ namespace MoonshineStudios.CharacterInputController
                     lastNetworkUpdate = Time.time;
                 }
             }
-            
 
+            
         }
 
         public void ShowCurrentPlayerCam()
@@ -261,6 +261,7 @@ namespace MoonshineStudios.CharacterInputController
 
             if (isGrounded && verticalVelocity < 0f)
             {
+               
                 verticalVelocity = -antiBump;
             }
 
@@ -276,7 +277,7 @@ namespace MoonshineStudios.CharacterInputController
 
             if (playerLocomotionInput.jumpPressed && isGrounded)
             {
-                verticalVelocity += Mathf.Sqrt(jumpSpeed * 1.5f * gravity);
+                verticalVelocity = jumpSpeed;
                 jumpedLastFrame = true;
 
                 if (isCurrentPlayer)
@@ -601,9 +602,7 @@ namespace MoonshineStudios.CharacterInputController
         {
             if (!isCurrentPlayer) return;
 
-            
             updateMovementState();
-            HandleVerticalMovement();
             HandleLateralMovement();
         }
 
@@ -620,6 +619,7 @@ namespace MoonshineStudios.CharacterInputController
             if (!isCurrentPlayer) return;
 
             playerLocomotionInput.jumpPressed = true;
+            Debug.Log($"Jump input received: {playerLocomotionInput.jumpPressed}");
             HandleVerticalMovement();
             playerLocomotionInput.jumpPressed = false;
         }

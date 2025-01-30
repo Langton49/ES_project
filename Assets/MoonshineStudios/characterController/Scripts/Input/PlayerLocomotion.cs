@@ -91,9 +91,14 @@ namespace MoonshineStudios.CharacterInputController
 
         public void OnJump(InputAction.CallbackContext context)
         {
-            if (playerController == null || !playerController.isCurrentPlayer || !context.performed)
+            if (playerController == null || !playerController.isCurrentPlayer || !context.performed) 
+            {
+                
                 return;
+            }
+        
 
+           
             jumpPressed = true;
         }
 

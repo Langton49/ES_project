@@ -2423,6 +2423,7 @@ GameObject:
   - component: {fileID: 8662950925923208566}
   - component: {fileID: 3496724495721717217}
   - component: {fileID: 1490443344389380153}
+  - component: {fileID: 5898798857216599296}
   m_Layer: 3
   m_Name: playerCharacter(3rd)
   m_TagString: Player
@@ -2532,7 +2533,7 @@ MonoBehaviour:
   sprintAcceleration: 50
   sprintSpeed: 7
   gravity: 25
-  jumpSpeed: 1
+  jumpSpeed: 4.24
   inAirAcceleration: 15
   terminalVelocity: 50
   groundLayers:
@@ -2636,6 +2637,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   passageGranted: 0
   escaped: 0
+--- !u!114 &5898798857216599296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2573924171108369628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e260a95e0639d024a846aff7c1e00178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameController: {fileID: 0}
 --- !u!1 &2706649389811590132
 GameObject:
   m_ObjectHideFlags: 0
