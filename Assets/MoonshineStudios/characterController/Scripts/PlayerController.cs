@@ -491,9 +491,8 @@ namespace MoonshineStudios.CharacterInputController
             if (!isCurrentPlayer)
             {
                 // Completely disable camera rotation updates for non-current players
-                if (playerCamera != null)
+                if (playerCamera != null && !isCurrentPlayer)
                 {
-                    // Reset camera rotation to match player's rotation for remote players
                     playerCamera.transform.rotation = Quaternion.LookRotation(
                         transform.forward,
                         Vector3.up
