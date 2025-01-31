@@ -555,10 +555,10 @@ PlayerSettings:
   enableInternalProfiler: 0
   logObjCUncaughtExceptions: 1
   enableCrashReportAPI: 0
-  cameraUsageDescription: 
+  cameraUsageDescription: View Player
   locationUsageDescription: 
-  microphoneUsageDescription: 
-  bluetoothUsageDescription: 
+  microphoneUsageDescription: Audio
+  bluetoothUsageDescription: No Bluetooth functionality
   macOSTargetOSVersion: 10.13.0
   switchNMETAOverride: 
   switchNetLibKey: 
